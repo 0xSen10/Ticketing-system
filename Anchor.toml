@@ -1,0 +1,15 @@
+[programs.localnet]
+ticket_platform = "HAf6b64TSKAT8D1YfBfCtzgLQBavvumhA3S3ccwuqeiF"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+
+[toolchain]
+anchor_version = "0.32.1"
